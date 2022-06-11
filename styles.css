@@ -75,3 +75,17 @@ h1{
     width: 200px;
 }
 
+#searchBarSection{
+    display: flex;
+    justify-content: center;;
+}
+
+#googleSearch{
+    margin-top: 30px;
+    width: 400px;
+    box-shadow: 10px;
+    padding: 7px;
+    font-size: 12px;
+    border-radius: 16px;
+}
+
