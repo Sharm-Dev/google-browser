@@ -44,36 +44,31 @@ header{
     position: relative;
 }
 
-#userImg{
-    height: 20px;
-    border-radius: 50%;
-}
-
 .navItems{
     font-size: 10px;
     padding: 0 5px;
     text-decoration: none;
-    color: rgb(157, 156, 156);;
+    color: rgb(157, 156, 156);
 }
 
 #userImg{
+    height: 20px;
+    border-radius: 20px;
     padding: 0 5px;
 }
 
-#headingSection{
+#userImg:hover{
+    box-shadow: 0 0 15px 0 rgb(201, 199, 197) ;
+    
+}
+
+#mainSection{
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 5vh;
 }
 
-h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-}
 
-#googleImg{
-    width: 200px;
-}
 
 #searchBarSection{
     display: flex;
@@ -90,5 +85,21 @@ h1{
     border: 1px solid rgba(149, 149, 149, 0.541);
     outline: none;
     box-shadow: 0 0 0 1px rgba(81, 81, 81, 0.161);
+    position: relative;
+}
+
+#mainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#magnifyingGlass{
+    height: 20px;
+}
+
+
+#gMicrophone{
+    height: 20px;
 }
 
