@@ -69,7 +69,6 @@ header{
 }
 
 
-
 #searchBarSection{
     display: flex;
     justify-content: center;;
@@ -101,5 +100,25 @@ header{
 
 #gMicrophone{
     height: 20px;
+}
+
+#iconBtns {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#rowOne {
+    display: flex;
+}
+
+#rowTwo{
+    display: flex;
+}
+
+.icons{
+    margin: 30px 30px;
 }
 
