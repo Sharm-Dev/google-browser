@@ -68,6 +68,11 @@ header{
     margin-top: 5vh;
 }
 
+#search{
+    display: flex;
+    align-items: center;
+}
+
 
 #searchBarSection{
     display: flex;
@@ -75,16 +80,14 @@ header{
 }
 
 #googleSearch{
-    margin-top: 30px;
-    width: 400px;
+    max-width: 380px;
     box-shadow: 10px;
-    padding: 7px;
+    padding: 7px 35px;
     font-size: 12px;
     border-radius: 16px;
     border: 1px solid rgba(149, 149, 149, 0.541);
     outline: none;
     box-shadow: 0 0 0 1px rgba(81, 81, 81, 0.161);
-    position: relative;
 }
 
 #mainSection{
@@ -95,11 +98,17 @@ header{
 
 #magnifyingGlass{
     height: 20px;
+    position: relative;
+    z-index: 1;
+    left: 25px;
 }
 
 
 #gMicrophone{
     height: 20px;
+    position: relative;
+    z-index: 1;
+    right: 25px;
 }
 
 #iconBtns {
@@ -110,15 +119,40 @@ header{
     cursor: pointer;
 }
 
-#rowOne {
-    display: flex;
+#iconsContainer{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
 }
 
-#rowTwo{
+.iconContainer{
+    background-color: red;
+    width: 50px;
+    height: 100px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icons{
-    margin: 30px 30px;
+.iconContainer:hover {
+    background-color: blue;
 }
+
+.icon{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(237, 236, 236);
+    border-radius: 50%;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and (min-width:750px){
+    #googleSearch{
+        width:60vw;
+    }
+}
+
 
